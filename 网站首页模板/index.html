@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <title>网站布局</title>
+</head>
+<body>
+    <!-- 头部 -->
+    <header>
+        <div class="head_box">
+            <div class="Notice">【公告】这里是最新的企业热点</div>
+            <div class="search">
+                <p>关键词搜索</p>
+                <div class="search_box">
+                    <input class="content" type="text" value="" placeholder="请输入关键词">
+                    <input class="bth" type="button">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- 导航 -->
+    <nav>
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <ul id="nav">
+            <li class = "tit">
+                <a href="#"><span>首页</span></a>
+                <ol>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">首页</a></li>
+                </ol>
+            </li>
+            <li class = "tit">
+                <a href="#"><span>关于我们</span></a>
+                <ol>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ol>
+            </li>
+            <li class = "tit">
+                <a href="#"><span>新闻动态</span></a>
+                <ol>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ol>
+            </li>
+            <li class = "tit">
+                <a href="#"><span>企业文化</span></a>
+                <ol>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ol>
+            </li>
+            <li class = "tit">
+                <a href="#"><span>投资者关系</span></a>
+                <ol>
+                    <li><a href="#">投资者关系</a></li>
+                    <li><a href="#">投资者关系</a></li>
+                    <li><a href="#">投资者关系</a></li>
+                    <li><a href="#">投资者关系</a></li>
+                </ol>
+            </li>
+            <li class = "tit">
+                <a href="#"><span>人力资源</span></a>
+                <ol>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ol>
+            </li>
+        </ul>
+    </nav>
+    <script>
+        $('#nav .tit').mouseenter(function(){
+            var idx = $(this).index();
+            $('.tit ol').eq(idx).stop().slideDown(300);
+        })
+        $('#nav .tit').mouseleave(function(){
+            var idx = $(this).index();
+            $('.tit ol').eq(idx).stop()
+            .slideUp(300);
+        })
+    </script>
+    <!-- banner -->
+    <div class="banner">
+        <img src="img/banner.png" alt="">
+    </div>
+    <!-- 公司概况 -->
+    <div class="Company_profile">
+        <div class="tit">COMPANY PROFILE</div>
+        <p>公司概况</p>
+        <span>企业一般是指以盈利为目的，运用各种生产要素（土地、劳动力、资本、技术和企业家才能等），向市场提供商品或服务，实行自主经营、自负盈亏、独立核算的法人或其他社会经济组织。<br>在商品经济范畴内，作为组织单元的多种模式之一，按照一定的组织规律，有机构成的经济实体，一般以营利为目的，以实现投资人、客户、员工、社会大众的利益最大化为使命，通过提供产品或服务换取收入。它是社会发展的产物，因社会分工的发展而成长壮大。企业是市场经济活动的主要参与者；在社会主义经济体制下，各种企业并存共同构成社会主义市场经济的微观基础。企业存在三类基本组织形式：独资企业、合伙企业和公司，公司制企业是现代企业中最主要的最典型的组织形式。</span>
+    </div>
+    <!-- 新闻中心&企业文化 -->
+    <main>
+        <div class="bg_01"></div>
+        <div class="bg_02"></div>
+        <!-- 新闻中心 -->
+        <div class="News_Center">
+            <div class="tit">NEWS CENTER</div>
+            <p class="tit_name">新闻中心</p>
+            <div class="box">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/bg01.png" alt="">
+                        <div class="content">
+                            <p>2016-01-01</p>
+                            <h1>企业一边是指以盈利为目的</h1>
+                            <span><img src="img/LEARMMORE.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/bg02.png" alt="">
+                        <div class="content">
+                                <p>2016-01-01</p>
+                                <h1>企业一边是指以盈利为目的</h1>
+                                <span><img src="img/LEARMMORE.png" alt=""></span>
+                            </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/bg03.png" alt="">
+                        <div class="content">
+                            <p>2016-01-01</p>
+                            <h1>企业一边是指以盈利为目的</h1>
+                            <span><img src="img/LEARMMORE.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/bg01.png" alt="">
+                        <div class="content">
+                            <p>2016-01-01</p>
+                            <h1>企业一边是指以盈利为目的</h1>
+                            <span><img src="img/LEARMMORE.png" alt=""></span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/bg02.png" alt="">
+                        <div class="content">
+                            <p>2016-01-01</p>
+                            <h1>企业一边是指以盈利为目的</h1>
+                            <span><img src="img/LEARMMORE.png" alt=""></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                </div>
+                <!-- Swiper JS -->
+                <script src="js/swiper.min.js"></script>
+    
+                <!-- Initialize Swiper -->
+                <script>
+                var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                },
+                 });
+      </script>
+            </div>
+        </div>
+        <!-- 企业文化 -->
+        <div class="corporate_culture">
+            <div class="tit">THE ENTERPRISE CULTURE</div>
+            <p class="tit_name">企业文化</p>
+            <div class="content">
+                <div class="bg_left">
+                    <img src="img/zlgz.png" alt="">
+                    <div class="bg_text">
+                        <h1>战略规划</h1>
+                        <p>在商品经济范畴内，作为组织单元的多种模式之一，按照一定的组织规律，有机构成的经济实体，一般以营利为目的，以实现投资人、客户、员工、社会大众的利益最大化为使命，</p>
+                        <a href="#">更多详情>></a>
+                    </div>
+                </div>
+                <div class="bg_right">
+                        <div class="bg01">
+                            <img src="img/jzg.png" alt="">
+                            <div class="text">
+                                <h1>战略规划</h1>
+                                <p>在商品经济范畴内，作为组织单元的多种模式之一，按照一定的组织规律，有机构成的经济实体，一般以营利为目的，以实现投资人、客</p>
+                                <a href="#">更多详情>></a>
+                            </div>
+                        </div>
+                        <div class="bg02"><img src="img/bg.png" alt=""></div>
+                    </div>
+            </div>
+        </div>
+    </main>
+    <!-- 尾部 -->
+    <footer>
+        <ul>
+            <li>
+                <p>新闻中心</p>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+            </li>
+            <li>
+                <p>新闻中心</p>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+            </li>
+            <li>
+                <p>新闻中心</p>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+            </li>
+            <li>
+                <p>新闻中心</p>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+            </li>
+            <li>
+                <p>新闻中心</p>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+                <span>新闻中心</span>
+            </li>
+            <li>
+                <p>新闻中心</p>
+                <span>地址：中国 北京</span>
+                <span>电话：000-1234567</span>
+            </li>
+        </ul>
+        <div class="bottom">copyright  版权信息  这里是版权信息</div>
+    </footer>
+</body>
+</html>
